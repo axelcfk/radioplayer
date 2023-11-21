@@ -1,0 +1,39 @@
+
+1.What is OWASP and what is its primary mission as described in the article?
+
+- The OWASP is a top 10 list (that is regularly updated) of security concerns for web app security. 
+
+2.Explain the concept of "Injection". Provide an example of how an injection attack could compromise a web application's security.
+
+
+- Injections happen when an attacker inputs illegal data (e.g. a SQL database) into a form input. This is also known as an SQL injection attack. 
+To prevent this from happening one can validate or sanitize the the submitted data. A database admin can in addition set controls to 
+minimize the amount information that can be submitted.
+
+
+3.Explain two strategies to prevent Broken Authentication vulnerabilities.
+
+- Strategies to prevent Broken Authentication vulnerabilities include:
+Two-factor authentication (2FA):
+With two-factor authentication a user must prove their identity. One way to do that is through two-way authentication,  i.e a requirement to establish identity in two different ways. 
+
+Advanced rate limiting
+
+This strategy protects refers to sophisticated techniques and strategies for controlling and managing the rate at which requests or actions are allowed within a system, e. g. denial-of-service attacks, brute-force login attempts and API traffic surges
+
+
+Rate limiting is crucial for maintaining the stability, security, and fair usage of a system,
+
+
+4. Describe the potential consequences of Insecure Deserialization in web applications. How can developers protect against such attacks?
+
+- Unsafe deserialization can result in DDoS attacks and remote code execution attacks. 
+A DDoS attack I an attack that disturbs the normal traffic of a targeted server. This can be likened to a traffic jam that obstructs the traffic so to prevent the traffic from reaching its destination. 
+
+
+To prevent DDoS attacks can be prevented by using rate limiting, blackhole routing ( The process of creating a “blackhole funnel” where both legitimate and malicious traffic is routed to a null, and the is removed from the network), Firewalls (which acts as a wall, protecting the server from certain malicious traffic), and any cast network diffusion (which “spreads” the traffic  and distributes it to different servers, which makes the impact of attacks smaller). 
+
+5. Briefly define Cross-Site Scripting (XSS) as outlined in the article and list two methods suggested in the article to prevent XSS attacks in web applications.
+
+
+- Cross-Site Scripting (XSS) occurs when the user is allowed to add custom code into an URL-path. This can be exploited by attackers who can run malicious JS code in the victims browser.  A way to avoid this is to automatically escape unwanted HTTP requests, or using frameworks (such as React, Ruby or Rails) to validate and/or sanitize the UGC. 

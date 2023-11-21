@@ -1,0 +1,80 @@
+/* .Done {
+  text-decoration: line-through;
+} */
+
+/* style.css */
+/* .responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+}
+
+@media (max-width: 768px) {
+  .responsive-grid {
+    grid-template-columns: 100%;
+    align-items: center;
+  }
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.channel {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  /* border-radius: 5px; */
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+.channelImg {
+  border-right: 0.5px solid black;
+  height: 100%;
+}
+
+.channelContainer {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.channelPlayer {
+  width: 500px;
+  margin-top: -40px;
+  align-items: center;
+}
+
+.channelDescription {
+  height: 20px;
+  margin-top: -20px;
+  margin-bottom: 60px;
+  width: 400px;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* white-space: nowrap;
+  animation: channelDescriptionAnimation 0.5s ease;
+  white-space: nowrap; */
+}
+
+/* @keyframes channelDescriptionAnimation {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  } */
